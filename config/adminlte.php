@@ -207,6 +207,12 @@ return [
                 ],
             ],
         ],
+         [
+            'text'        => 'Customer Support',
+            'url'         => 'admin/customersupport',
+            'icon'        => 'users',
+            'label_color' => 'success',
+        ],
         // End All Reports Menu
     ],
 

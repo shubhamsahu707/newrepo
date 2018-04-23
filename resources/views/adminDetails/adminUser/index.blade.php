@@ -1,10 +1,11 @@
 
-
+@include('header')
 @extends('adminlte::page')
 
 @section('title', 'AdminLTE')
 
 @section('content_header')
+
 <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
@@ -22,9 +23,9 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="pre-scrollable">
-                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                            <table width="100%" class="table" id="table">
                                 <thead>
-                                    <tr>
+                                    <tr  >
                                         <th>#</th>
                                         <th>Membership ID</th>
                                         <th>Main Applicant Name</th>
@@ -40,7 +41,7 @@
                                 
                                 <tbody>
 
-                                    <tr class="odd gradeX">
+                                    <tr class="success">
                                        <td>1</td>
                                         <td>Ram</td>
                                          <td>Kam</td>
@@ -49,7 +50,7 @@
                                          <td>kaka</td>
                                          <td>HJfhjsa</td>
                                          
-                                        <td><a  class="fa fa-pencil btn btn-primary" href=""></a>&nbsp;&nbsp;&nbsp;<a class="fa fa-trash btn btn-danger" href=""></a></td>
+                                        <td><a class="fa fa-pencil btn btn-primary" href=""></a>&nbsp;&nbsp;&nbsp;<a class="fa fa-trash btn btn-danger" href=""></a></td>
                                     </tr>
                                     
                                 </tbody>
@@ -69,3 +70,8 @@
             <!-- /.row -->
         </div>
         @stop
+        <script>
+  $(document).ready(function() {
+    $('#table').DataTable();
+} );
+ </script>
